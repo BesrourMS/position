@@ -1,27 +1,11 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
-
 <title>HTML5 : Géolocalisation avec Carte Google Maps</title>
-
 <meta charset="utf-8">
-
 <style>
-
-      html, body, #map {
-
-        margin: 0;
-
-        padding: 0;
-
-        height: 100vh;
-
-      }
-
-    </style>
-
+      html, body, #map {margin: 0; padding: 0;height: 100vh;}
+</style>
 </head>
 
 <body style="margin:0px;">
@@ -124,7 +108,10 @@ if(navigator.geolocation) {
       '<h2>Longitude : <span>'+ position.coords.longitude + '</span></h2>'+
 
       '<h2>Altitude : <span>'+ position.coords.altitude + '</span></h2>'+
-
+      '<h2>Accuracy : <span>'+ position.coords.accuracy + '</span></h2>'+
+      '<h2>Altitude Accuracy : <span>'+ position.coords.altitudeAccuracy + '</span></h2>'+
+      '<h2>Heading : <span>'+ position.coords.heading + '</span></h2>'+
+      '<h2>Speed : <span>'+ position.coords.speed + '</span></h2>'+
       '</div>'+
 
       '</div>';
