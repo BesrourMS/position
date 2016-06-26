@@ -95,6 +95,11 @@ if(navigator.geolocation) {
 		infopos += "Longitude: "+position.coords.longitude+"<br>";
 
 		infopos += "Altitude : "+position.coords.altitude +"<br>";
+		infopos += "Accuracy : "+position.coords.accuracy +"<br>";
+		infopos += "Altitude Accuracy : "+position.coords.altitudeAccuracy +"<br>";
+		infopos += "Heading : "+position.coords.heading +"<br>";
+		infopos += "Speed : "+position.coords.speed +"<br>";
+
 
 		//document.getElementById("maposition").innerHTML = infopos;
 
@@ -193,32 +198,10 @@ if(navigator.geolocation) {
 		document.getElementById("maposition").innerHTML = info;
 
 	}
-
-
-
 	navigator.geolocation.getCurrentPosition(affichePosition,erreurPosition);
-
-
-
 } else {
-
-
-
 	alert("Ce navigateur ne supporte pas la géolocalisation");
-
-
-
 }
-
-
-
-
-
-
-
 </script>
-
 </body>
-
 </html>
-
